@@ -1,0 +1,152 @@
+/* esercizio 1 */
+.ex-1-square {
+    transition: 2s;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+}
+.ex-1-square:hover {
+    background: red;
+}
+
+/* esercizio 2 */
+.ex-2-square {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: 2s;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+/* esercizio 3 */
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    background-color: red;
+}
+.ex-3-square:hover{
+ border-radius: 50%;
+}
+/* esercizio 4 */
+.ex-4-square{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+/* esercizio 5 */
+.ex-5-square{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active{
+    width: 20px;
+    height: 20px;
+}
+/* esercizio 6 */
+.well img{
+    height: 300px;
+    transition: 1s;
+}
+.col-xs-12 .well .ex-6-img:hover{
+    filter: grayscale();
+    height: 300px;
+}
+/* esercizio 7 */
+.col-xs-12 .well .ex-7-img:hover{
+    filter: sepia(.5) grayscale(.6);
+}
+/* esercizio 8 */
+.ex-8-img{
+    height: 300px;
+    transition: 1s;
+}
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: grayscale(.3) sepia(.5)
+}
+/* esercizio 9 */
+.ex-9-img {
+    height: 100px;
+    margin-left: 40px;
+    transition: 2s;
+    
+}
+img.ex-9-img{
+    
+    max-height: 150px;
+}
+.ex-9-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+    transform: scale(1.2);
+   
+}
+}
+/* esercizio 10 */
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+/* esercizio 11 */
+.ex-11-icon{
+    font-size: 50px;;
+}
+.ex-11-icon:hover {
+    animation: spinALittleBit 2s linear;
+}
+@keyframes spinALittleBit {
+    0%{
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
